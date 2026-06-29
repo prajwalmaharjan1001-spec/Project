@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="../images/logo.png">
     <style>
-        .fa-hotel{
-            font-size: 20px;
+        /* .fa-hotel{
+            font-size: 100px;
             color: white;
-        }
+        } */
+         
         *{
             padding: 0;
             margin: 0;
@@ -18,7 +19,7 @@
         .navigation{
              width: 100%;
             text-align: center;
-            background-color: rgb(71, 71, 71);
+            background-color:#a17132;
 
         }
         .head{
@@ -26,7 +27,9 @@
             color: white;
         }
         .nav-bar{
-            padding: 5px 20px;
+            margin-left: 100px;
+            margin-right: 100px;
+            padding: 0px 20px;
             display: flex;
            
             justify-content: space-between;
@@ -60,12 +63,18 @@
             padding: 20px;
         }
         .section1{
+            padding: 20px;
             display: flex;
             gap: 20px;
             height: 200px;
             margin-top: 20px;
             overflow-x: auto;
             scrollbar-width: thin;
+            
+        }
+        .section1 a:hover{
+            transform: scale(1.1);
+            /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
         }
         .place{
             width: 200px;
@@ -78,6 +87,63 @@
             height: 70%;
             border-radius: 20px;
         }
+        .fav-places{
+            height: 500px;
+             margin-left: 100px;
+            margin-right: 100px;
+            padding: 20px;
+            margin-bottom: 200px;
+        }
+        .section2{
+            padding: 10px;
+            display: flex;
+            gap: 20px;
+            height: 400px;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+        .section2 img{
+            border-radius: 5px 5px 0 0; 
+            width: 100%;
+            height: 50%;
+        }
+        .section2 a{
+            width: 300px;
+            color: black;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+             display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+        }
+        .text{
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .rating {
+        font-size: 20px;
+        }
+
+        .rating span {
+        color: #ccc;
+        }
+
+        .rating .filled {
+        color: gold;
+        }
+        .price{
+            margin-top: auto; 
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 15px;
+            font-size: 20px;
+        }
+
+        .price strong{
+            margin-left: 5px;
+        }
     </style>
 </head>
 <body>
@@ -87,7 +153,8 @@
         </div>
         <div class="nav-bar">
             <div>
-                <i class="fa-solid fa-hotel"></i>
+                <!-- <i class="fa-solid fa-hotel"></i> -->
+                <img style="height: 40px;" src="./images/logooo.png" alt="">
             </div>
             <div>
                 <nav>
@@ -145,6 +212,86 @@
             <h2>Bandipur</h2>
         </a>
      </div>
+    </div>
+    <div class="fav-places">
+        <h1>Some Famous Deals</h1>
+        <div class="section2">
+            <a href="">
+                <img src="./images/f-1.jpg" alt="">
+                <div class="text">
+                    <h2>Lemon Tree Premier</h2>
+                    <p>Budhanilkantha, Kathmandu, Nepal</p>
+                    <div class="rating">
+                        <span class="filled">★</span>
+                        <span class="filled">★</span>
+                        <span class="filled">★</span>
+                        <span class="filled">★</span>
+                        <span class="filled">★</span>    
+                    </div>
+                    <div class="price">
+                        <span>Starting from:</span>
+                        <strong>$299</strong>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <img src="./images/f-2.jpg" alt="">
+                <div class="text">
+                    
+                    <h2>The Dwarika</h2>
+                    <p>Battisputali, Kathmandu, Nepal</p>
+                    <div class="rating">
+                        <span class="filled">★</span>
+                        <span class="filled">★</span>
+                        <span class="filled">★</span>
+                        <span class="filled">★</span>
+                        <span class="filled">★</span>    
+                    </div>
+                    <div class="price">
+                        <span>Starting from:</span>
+                        <strong>$299</strong>
+                    </div>
+                </div>
+            </a>
+            <a href="">
+                <img src="./images/f-3.jpg" alt="">
+                <div class="text">
+
+                    <h2>Aarya Hotel and Spa</h2>
+                    <p>Thamel Marg 32, Kathmandu, Nepal</p>
+                    <div class="rating">
+                        <span class="filled">★</span>
+                        <span class="filled">★</span>
+                        <span class="filled">★</span>
+                        <span class="filled">★</span>
+                        <span>★</span>    
+                    </div>
+                    <div class="price">
+                        <span>Starting from:</span>
+                        <strong>$299</strong>
+                    </div>
+                </div>
+                </a>
+                <a href="">
+                    <img src="./images/f-4.jpg" alt="">
+                    <div class="text">
+                        <h2>Hotel Thrive, A Tropical Courtyard</h2>
+                        
+                        <p>Dhobichaur, Thamel, Kathmandu, Nepal</p>
+                        <div class="rating">
+                            <span class="filled">★</span>
+                            <span class="filled">★</span>
+                            <span class="filled">★</span>
+                            <span class="filled">★</span>
+                            <span>★</span>    
+                        </div>
+                        <div class="price">
+                            <span>Starting from:</span>
+                            <strong>$299</strong>
+                        </div>
+                    </div>
+                    </a>
+        </div>
     </div>
 </body>
 </html>
