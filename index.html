@@ -6,196 +6,60 @@
     <title>Hotel Booking </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="../images/logo.png">
-    <style>
-        /* .fa-hotel{
-            font-size: 100px;
-            color: white;
-        } */
-         
-        *{
-            padding: 0;
-            margin: 0;
-        }
-        .navigation{
-            position: fixed ;
-             width: 100%;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
-
-        }
-        .head{
-            padding: 30px;
-            color: white;
-        }
-        .nav-bar{
-            margin-left: 100px;
-            margin-right: 100px;
-            padding: 0px 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-        a{
-            text-decoration: none;
-            color: white;
-        }
-        nav{
-            display: flex;
-            gap: 20px;
-        }
-        button{
-            padding: 5px;
-            border-radius: 10px;
-            background-color: rgb(80, 153, 79,0.9);
-            color: white;
-        }
-        .welcome{
-            background-image: url("images/Mount-Everest.webp");
-            height: 600px;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-        }
-        .places{
-            height: 300px;
-             margin-left: 100px;
-            margin-right: 100px;
-            padding: 20px;
-        }
-        .section1{
-            padding: 20px;
-            display: flex;
-            gap: 20px;
-            height: 200px;
-            margin-top: 20px;
-            overflow-x: auto;
-            scrollbar-width: thin;
-            
-        }
-        .section1 a:hover{
-            transform: scale(1.1);
-        }
-        .place{
-            width: 200px;
-            text-align: center;
-            flex-shrink: 0;
-            color: black;
-        }
-        .place img{
-            width: 100%;
-            height: 70%;
-            border-radius: 20px;
-        }
-        .fav-places{
-            height: 500px;
-             margin-left: 100px;
-            margin-right: 100px;
-            padding: 20px;
-            
-        }
-        .section2{
-            padding: 10px;
-            display: flex;
-            gap: 20px;
-            height: 400px;
-            margin-top: 20px;
-            justify-content: space-between;
-        }
-        .section2 img{
-            border-radius: 5px 5px 0 0; 
-            width: 100%;
-            height: 50%;
-        }
-        .section2 a{
-            width: 300px;
-            color: black;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-             display: flex;
-            flex-direction: column;
-            border-radius: 5px;
-        }
-        .text{
-            flex: 1;
-            padding: 10px;
-            display: flex;
-            flex-direction: column;
-            gap: 5px;
-        }
-        .rating {
-        font-size: 20px;
-        }
-
-        .rating span {
-        color: #ccc;
-        }
-
-        .rating .filled {
-        color: gold;
-        }
-        .price{
-            margin-top: auto; 
-            display: flex;
-            justify-content: flex-end;
-            padding: 0 15px;
-            font-size: 20px;
-        }
-
-        .price strong{
-            margin-left: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="index.css">
+   
 </head>
 <body>
-    <div class="navigation">
-        <div class="head">
-          <h1>SMART HOTEL BOOKING</h1>
-        </div>
-        <div class="nav-bar">
-            <div>
-                <!-- <i class="fa-solid fa-hotel"></i> -->
-                <img style="height: 50px;" src="./images/logooo.png" alt="">
+    <div>
+        <div class="navigation">
+            <div class="head">
+                <h1>SMART HOTEL BOOKING</h1>
             </div>
-            <div>
-                <nav>
-                    <a href="">Home</a>
-                    <a href="">Stays</a>
-                </nav>
-            </div>
-            <div>
-                <button>Log in</button>
+            <div class="nav-bar">
+                <div>
+                    <img style="height: 50px;" src="./images/logooo.png" alt="">
+                </div>
+                <div>
+                    <nav>
+                        <a href="#home">Home</a>
+                        <a href="">Stays</a>
+                        <a href="priceDetails.html">Pricing & Details</a>
+                    </nav>
+                </div>
+                <div>
+                    <button>Log in</button>
                 <button>Sign up</button>
             </div>
         </div>
     </div>
-    <div class="welcome">
+    <div class="welcome" id="home">
         <h1 style="color: white;">WELCOME TO OUR SMART HOTEL BOOKING</h1>
     </div>
     
     <div class="places">
-     <h1>Places to visit</h1>
-     <div class="section1">
-        <a href="/html/kathmandu.html" class="place">
-            <img src="images/ktm.webp" alt="">
-            <h2>Kathmandu</h2>
-        </a>
-        <a href="/html/patan.html" class="place">
-            <img src="images/patan.webp" alt="">
-            <h2>Patan</h2>
-        </a>
-        <a href="/html/bhaktapur.html" class="place">
-            <img src="images/bkt.jpg" alt="">
-            <h2>Bhaktapur</h2>
-        </a>
-        <a href="/html/nagarkot.html" class="place">
-            <img src="images/nagarkot.jpg" alt="">
-            <h2>Nagarkot</h2>
-        </a>
-        <a href="/html/chitlang.html" class="place">
-            <img src="images/chitlang.png" alt="">
-            <h2>Chitlang</h2>
-        </a>
-        <a href="/html/pokhara.html" class="place">
+        <h1>Places to visit</h1>
+        <div class="section1">
+            <a href="/html/kathmandu.html" class="place">
+                <img src="images/ktm.webp" alt="">
+                <h2>Kathmandu</h2>
+            </a>
+            <a href="/html/patan.html" class="place">
+                <img src="images/patan.webp" alt="">
+                <h2>Patan</h2>
+            </a>
+            <a href="/html/bhaktapur.html" class="place">
+                <img src="images/bkt.jpg" alt="">
+                <h2>Bhaktapur</h2>
+            </a>
+            <a href="/html/nagarkot.html" class="place">
+                <img src="images/nagarkot.jpg" alt="">
+                <h2>Nagarkot</h2>
+            </a>
+            <a href="/html/chitlang.html" class="place">
+                <img src="images/chitlang.png" alt="">
+                <h2>Chitlang</h2>
+            </a>
+            <a href="/html/pokhara.html" class="place">
             <img src="images/pokhara.jpg" alt="">
             <h2>Pokhara</h2>
         </a>
@@ -211,54 +75,154 @@
             <img src="images/bandipur.jpg" alt="">
             <h2>Bandipur</h2>
         </a>
-     </div>
     </div>
-    <div class="fav-places">
-        <h1>Some famous deals in Kathmandu</h1>
-        <div class="section2">
-            <a href="">
-                <img src="./images/f-1.jpg" alt="">
-                <div class="text">
-                    <h2>Lemon Tree Premier</h2>
-                    <p>Budhanilkantha, Kathmandu, Nepal</p>
+</div>
+<div class="fav-places">
+    <h1>Some famous deals in Kathmandu</h1>
+    <div class="section2">
+        <a href="">
+            <img src="./images/f-1.jpg" alt="">
+            <div class="text">
+                <h2>Lemon Tree Premier</h2>
+                <p>Budhanilkantha, Kathmandu, Nepal</p>
+                <div class="rating">
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>    
+                </div>
+                <div class="price">
+                    <span>Starting from:</span>
+                    <strong>$389</strong>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <img src="./images/f-2.jpg" alt="">
+            <div class="text">
+                
+                <h2>The Dwarika</h2>
+                <p>Battisputali, Kathmandu, Nepal</p>
+                <div class="rating">
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>    
+                </div>
+                <div class="price">
+                    <span>Starting from:</span>
+                    <strong>$450</strong>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <img src="./images/f-3.jpg" alt="">
+            <div class="text">
+                
+                <h2>Aarya Hotel and Spa</h2>
+                <p>Thamel Marg 32, Kathmandu, Nepal</p>
+                <div class="rating">
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span>★</span>    
+                </div>
+                <div class="price">
+                    <span>Starting from:</span>
+                    <strong>$191</strong>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <img src="./images/f-4.jpg" alt="">
+            <div class="text">
+                <h2>Hotel Thrive, A Tropical Courtyard</h2>
+                
+                <p>Dhobichaur, Thamel, Kathmandu, Nepal</p>
+                <div class="rating">
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span>★</span>    
+                </div>
+                <div class="price">
+                    <span>Starting from:</span>
+                    <strong>$185</strong>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="fav-places">
+    <h1>Some famous deals in Pokhara</h1>
+    <div class="section2">
+        <a href="">
+            <img src="./images/p-1.jpg" alt="">
+            <div class="text">
+                <h2>Sarangkot Mountain Lodge</h2>
+                <p>Sarangkot, Pokhara, Nepal</p>
+                <div class="rating">
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>    
+                </div>
+                <div class="price">
+                    <span>Starting from:</span>
+                    <strong>$349</strong>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <img src="./images/p-2.jpg" alt="">
+            <div class="text">
+                
+                <h2>Bar Peepal Resort</h2>
+                <p>Manimarga, Pokhara, Nepal</p>
+                <div class="rating">
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>
+                    <span class="filled">★</span>    
+                </div>
+                <div class="price">
+                    <span>Starting from:</span>
+                    <strong>$199</strong>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <img src="./images/p-3.jpg" alt="">
+            <div class="text">
+                
+                    <h2>Hotel Barahi Pokhara</h2>
+                    <p>Barahi Marg, Likeside, Pokhara, Nepal</p>
                     <div class="rating">
                         <span class="filled">★</span>
                         <span class="filled">★</span>
                         <span class="filled">★</span>
                         <span class="filled">★</span>
-                        <span class="filled">★</span>    
+                        <span class="filled">★</span>
+                        
                     </div>
                     <div class="price">
                         <span>Starting from:</span>
-                        <strong>$389</strong>
+                        <strong>$194</strong>
                     </div>
                 </div>
             </a>
             <a href="">
-                <img src="./images/f-2.jpg" alt="">
+                <img src="./images/p-4.jpg" alt="">
                 <div class="text">
+                    <h2>Majestic Lake Front Hotel & Suites</h2>
                     
-                    <h2>The Dwarika</h2>
-                    <p>Battisputali, Kathmandu, Nepal</p>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <div class="price">
-                        <span>Starting from:</span>
-                        <strong>$450</strong>
-                    </div>
-                </div>
-            </a>
-            <a href="">
-                <img src="./images/f-3.jpg" alt="">
-                <div class="text">
-
-                    <h2>Aarya Hotel and Spa</h2>
-                    <p>Thamel Marg 32, Kathmandu, Nepal</p>
+                    <p>Baidam Road, Pokhara, Nepal</p>
                     <div class="rating">
                         <span class="filled">★</span>
                         <span class="filled">★</span>
@@ -268,112 +232,12 @@
                     </div>
                     <div class="price">
                         <span>Starting from:</span>
-                        <strong>$191</strong>
-                    </div>
-                </div>
-                </a>
-                <a href="">
-                    <img src="./images/f-4.jpg" alt="">
-                    <div class="text">
-                        <h2>Hotel Thrive, A Tropical Courtyard</h2>
-                        
-                        <p>Dhobichaur, Thamel, Kathmandu, Nepal</p>
-                        <div class="rating">
-                            <span class="filled">★</span>
-                            <span class="filled">★</span>
-                            <span class="filled">★</span>
-                            <span class="filled">★</span>
-                            <span>★</span>    
-                        </div>
-                        <div class="price">
-                            <span>Starting from:</span>
-                            <strong>$185</strong>
-                        </div>
-                    </div>
-                    </a>
-        </div>
-    </div>
-    <div class="fav-places">
-        <h1>Some famous deals in Pokhara</h1>
-        <div class="section2">
-            <a href="">
-                <img src="./images/p-1.jpg" alt="">
-                <div class="text">
-                    <h2>Sarangkot Mountain Lodge</h2>
-                    <p>Sarangkot, Pokhara, Nepal</p>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <div class="price">
-                        <span>Starting from:</span>
-                        <strong>$349</strong>
+                        <strong>$144</strong>
                     </div>
                 </div>
             </a>
-            <a href="">
-                <img src="./images/p-2.jpg" alt="">
-                <div class="text">
-                    
-                    <h2>Bar Peepal Resort</h2>
-                    <p>Manimarga, Pokhara, Nepal</p>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <div class="price">
-                        <span>Starting from:</span>
-                        <strong>$199</strong>
-                    </div>
-                </div>
-            </a>
-            <a href="">
-                <img src="./images/p-3.jpg" alt="">
-                <div class="text">
-
-                    <h2>Hotel Barahi Pokhara</h2>
-                    <p>Barahi Marg, Likeside, Pokhara, Nepal</p>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                           
-                    </div>
-                    <div class="price">
-                        <span>Starting from:</span>
-                        <strong>$194</strong>
-                    </div>
-                </div>
-                </a>
-                <a href="">
-                    <img src="./images/p-4.jpg" alt="">
-                    <div class="text">
-                        <h2>Majestic Lake Front Hotel & Suites</h2>
-                        
-                        <p>Baidam Road, Pokhara, Nepal</p>
-                        <div class="rating">
-                            <span class="filled">★</span>
-                            <span class="filled">★</span>
-                            <span class="filled">★</span>
-                            <span class="filled">★</span>
-                            <span>★</span>    
-                        </div>
-                        <div class="price">
-                            <span>Starting from:</span>
-                            <strong>$144</strong>
-                        </div>
-                    </div>
-                    </a>
         </div>
     </div>
-    
+</div>
 </body>
 </html>
