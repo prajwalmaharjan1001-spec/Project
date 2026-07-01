@@ -6,18 +6,163 @@
     <title>Hotel Booking </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="../images/logo.png">
-    <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <style>
+          *{
+            padding: 0;
+            margin: 0;
+        }
+        .navigation{
+            position: fixed ;
+             width: 100%;
+            background-color: rgba(4, 0, 11, 0.5);
+
+        }
+        .nav-bar{
+            margin-left: 100px;
+            margin-right: 100px;
+            padding: 10px 10px;
+            margin-top: 5px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        nav{
+            display: flex;
+            gap: 20px;
+        }
+        button{
+            padding: 5px;
+            border-radius: 10px;
+            background-color: rgb(80, 153, 79,0.9);
+            color: white;
+        }
+        .welcome{
+            background:  linear-gradient(
+            to right,
+            rgba(0, 0, 0) 0%,
+            rgba(0, 0, 0,0.9) 30%,
+            rgba(0, 0, 0, 0.4) 60%,
+            rgba(0, 0, 0, 0) 100%
+        ),
+        url("./images/front.jpg");
+            height: 700px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+             display: flex;
+            align-items: center;
+        }
+        .wel{
+             display: flex;
+             width: 100%;
+             margin-left: 100px;
+
+            color: white;
+        }
+        .places{
+            height: 300px;
+             margin-left: 100px;
+            margin-right: 100px;
+            margin-top: 50px;
+            padding: 20px;
+        }
+        .section1{
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            height: 200px;
+            margin-top: 20px;
+            overflow-x: auto;
+            scrollbar-width: thin;
+            
+        }
+        .section1 a:hover{
+            transform: scale(1.1);
+        }
+        .place{
+            width: 200px;
+            text-align: center;
+            flex-shrink: 0;
+            color: black;
+        }
+        .place img{
+            width: 100%;
+            height: 70%;
+            border-radius: 20px;
+        }
+        .fav-places{
+            height: 500px;
+             margin-left: 100px;
+            margin-right: 100px;
+            padding: 20px;
+            
+        }
+        .section2{
+            padding: 10px;
+            display: flex;
+            gap: 20px;
+            height: 400px;
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+        .section2 img{
+            border-radius: 5px 5px 0 0; 
+            width: 100%;
+            height: 50%;
+        }
+        .section2 a{
+            width: 300px;
+            color: black;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+             display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+        }
+        .text{
+            flex: 1;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .rating {
+        font-size: 20px;
+        }
+
+        .rating span {
+        color: #ccc;
+        }
+
+        .rating .filled {
+        color: gold;
+        }
+        .price{
+            margin-top: auto; 
+            display: flex;
+            justify-content: flex-end;
+            padding: 0 15px;
+            font-size: 20px;
+        }
+
+        .price strong{
+            margin-left: 5px;
+        }
+        
+    </style>
    
 </head>
 <body>
     <div>
-        <div class="navigation">
-            <div class="head">
-                <h1>SMART HOTEL BOOKING</h1>
-            </div>
+        <div class="navigation" id="home">
             <div class="nav-bar">
-                <div>
-                    <img style="height: 50px;" src="./images/logooo.png" alt="">
+                <div style="display: flex;">
+                    <img style="height: 70px;" src="./images/logooo.png" alt="">
+                    <h1 style="padding: 5px 0px; margin-top: 10px;"> HOTEL BOOKING</h1>
                 </div>
                 <div>
                     <nav>
@@ -32,10 +177,25 @@
             </div>
         </div>
     </div>
-    <div class="welcome" id="home">
-        <h1 style="color: white;">WELCOME TO OUR SMART HOTEL BOOKING</h1>
+    <div class="welcome">
+        <div class="wel">
+            <div style=" height: 200px; width: 50%; display: flex; flex-direction: column; gap: 30px;">
+                <h3>WELCOME TO SMART HOTEL BOOKING</h3>
+                <h1>Discover <br> Nepal's Perfect Stays</h1>
+                <p>Booking hotels, mountains resort and <br> experience across Nepal's most breathtaking <br> destinations.</p>
+                <a href="#place"> 
+                    
+                    <button style="width: fit-content; background-color: blue; padding: 5px 10px;">Explore More</button>
+                </a>
+            </div>
+            <div>
+                
+            </div>
+        </div>
     </div>
-    
+    <div id="place">
+
+    </div>
     <div class="places">
         <h1>Places to visit</h1>
         <div class="section1">
