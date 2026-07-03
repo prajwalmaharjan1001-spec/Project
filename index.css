@@ -3,7 +3,8 @@
             margin: 0;
         }
         .navigation{
-            position: fixed ;
+            position: absolute ;
+            position: fixed;
              width: 100%;
             background-color: rgba(4, 0, 11, 0.5);
 
@@ -32,7 +33,7 @@
             background-color: rgb(80, 153, 79,0.9);
             color: white;
         }
-        .welcome{
+        /* .welcome{
             background:  linear-gradient(
             to right,
             rgba(0, 0, 0) 0%,
@@ -92,14 +93,14 @@
             padding: 20px;
             
         }
-        .section2{
+       */ .section2{
             padding: 10px;
             display: flex;
             gap: 20px;
             height: 400px;
             margin-top: 20px;
             justify-content: space-between;
-        }
+        } 
         .section2 img{
             border-radius: 5px 5px 0 0; 
             width: 100%;
@@ -130,7 +131,7 @@
 
         .rating .filled {
         color: gold;
-        }
+        }/*
         .price{
             margin-top: auto; 
             display: flex;
@@ -141,4 +142,4 @@
 
         .price strong{
             margin-left: 5px;
-        }
+        } */
