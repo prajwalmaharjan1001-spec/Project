@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        cursor: default;
+
+    }
+    .form-box{
+        width: 300px;
+        height: 250px;
+        padding: 20px 5px;
+        border-radius: 0px 5px 5px 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        display: none;
+    }
+    .form-box.active{
+        display: block;
+    }
+    form{
+         display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .box1{
+        width: 300px;
+        height: 250px;
+        padding: 20px 5px;
+        border-radius: 5px 0 0 5px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+    }
+    .container{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center ;
+
+    }
+    button{
+        background-color: rgb(80, 153, 79,0.9);
+        color: white;
+        padding: 3px 20px;
+        border-radius: 5px;
+        width: 85%;
+        &:hover{
+            background-color: rgba(58, 131, 57, 0.9);
+        }
+    }
+    input{
+        width: 80%;
+        height: 20px;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    h2{
+        padding: 10px;
+    }
+    body{
+        background-image: url(/images/front.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    p{
+        color: white;
+    }
+    a{
+        color: aqua;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box1">
+            <!-- <h2>welcome to out hotel booking </h2> -->
+        </div>
+        <div class="form-box active" id="login-form">
+            <form action=""> 
+                <h2 style="color: white;">Log in</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="text" placeholder="Password" required>
+                <button type="submit" name="login">login</button>
+                <p>Don't have an account? <a href="#" onclick="showForm('register-form')">Register</a></p>
+            </form>
+        </div>
+        <div class="form-box" id="register-form">
+            <form action=""> 
+                <h2 style="color: white;">Register</h2>
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="text" placeholder="Password" required>
+                <button type="submit" name="register">Register</button>
+                <p>Do you have an account? <a href="#" onclick="showForm('login-form')">Login</a></p>
+                
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        function showForm(formId){
+            const forms = document.querySelectorAll(".form-box");
+
+            for(const form of forms){
+                form.classList.remove("active");
+            }
+            document.getElementById(formId).classList.add("active")
+        }
+    </script>
+</body>
+</html>
