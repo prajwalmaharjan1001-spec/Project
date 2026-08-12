@@ -5,7 +5,6 @@
             cursor: default;
         }
         .navigation{
-            position: absolute ;
             position: fixed;
              width: 100%;
             background-color: rgba(4, 0, 11, 0.5);
@@ -35,6 +34,19 @@
             background-color: rgb(80, 153, 79,0.9);
             color: white;
         }
+        .blue-box {
+                background-color: blue;
+                height: 400px;
+                width: 500px;
+
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                z-index: 1000;
+                display: none;
+            }
         /* .welcome{
             background:  linear-gradient(
             to right,
