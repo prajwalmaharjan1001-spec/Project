@@ -439,41 +439,52 @@ function showHotels(city = "all") {
     });
 };
 showHotels();
-document.querySelectorAll(".side-menu a").forEach(link => {
+const sideMenu = document.querySelector(".side-menu");
 
-    link.addEventListener("click", function(event) {
+if (sideMenu) {
 
-        event.preventDefault();
+    sideMenu.querySelectorAll("a").forEach(link => {
 
-        const city = this.getAttribute("data-city");
+        link.addEventListener("click", function(event) {
 
-        showHotels(city);
+            event.preventDefault();
 
-        // Go back to the hotel list
-        document.querySelector(".listing").scrollIntoView({
-            behavior: "smooth",
-            block: "start"
+            const city = this.getAttribute("data-city");
+
+            showHotels(city);
+
         });
 
     });
 
-});
-
-var button = document.getElementById("close");
-var blueBox = document.getElementById("blue-box");
+}
+// your sidebar code here
 
 
-// Close
-button.addEventListener("click", () => {
-    blueBox.style.display = "none";
-});
+const blueBox = document.getElementById("blue-box");
+const closeButton = document.getElementById("close");
+
+if (blueBox && closeButton) {
+
+    document.addEventListener("click", function (e) {
+
+        if (e.target.classList.contains("book")) {
+
+            const hotelName = e.target.getAttribute("data-hotel");
+
+            document.getElementById("selected-hotel").textContent =
+                "Hotel: " + hotelName;
+
+            blueBox.style.display = "block";
+        }
+
+    });
 
 
-// Book Now
-document.addEventListener("click", (e) => {
+    closeButton.addEventListener("click", function () {
 
-    if (e.target.classList.contains("book")) {
-        blueBox.style.display = "block";
-    }
+        blueBox.style.display = "none";
 
-});
+    });
+
+}
