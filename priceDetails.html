@@ -6,12 +6,6 @@
     <title>Hotel Booking</title>
     <link rel="stylesheet" href="index.css">
     <style>
-       .wholePlaces {
-            padding-top: 100px;
-            /* border: 1px solid; */
-            margin: 0 100px;
-            color: black;
-        }
         .wholePlaces a{
             color: black;
         }
@@ -20,21 +14,55 @@
             height: 200px;
             
         }
-        .list {
-             box-shadow: 0 4px 10px rgba(0,0,0,0.2);    
-            display: flex;
-            gap: 20px;
-            padding: 10px;
-            text-decoration: none;
-            color: black;
-            /* border: 1px solid; */
-        }
         .text1{
             width: 60%;
             display: flex;
             flex-direction: column;
             gap: 10px;
             /* border: 1px solid black; */
+        }
+        .wholePlaces {
+            margin-left: 220px;
+            margin-right: 100px;
+            color: black;
+        }
+
+        .listing {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .list {
+            width: 70%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+            text-decoration: none;
+            color: black;
+        }
+        .side-menu {
+            position: fixed;
+            left: 20px;
+            top: 150px;
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            background-color: rgb(169, 169, 255);
+            color: white;
+            
+        }
+
+        .side-menu a {
+            color: black;
+            text-decoration: none;
+            padding: 8px;
+            border: 1px solid;
+        }
+
+        .side-menu a:hover {
+            background-color: blue;
+            color: black;
         }
     </style>
 </head>
@@ -61,324 +89,93 @@
     </div>
 
     <div class="wholePlaces" >
-        <div>
-            <a href="#pokhara">Pokhara</a>
-            <a href="#bhaktapur">Bhaktapur</a>
+        <div class="side-menu">
+             <a href="#" data-city="all">🏨 All Hotels</a>
+            <a href="#" data-city="Kathmandu">Kathmandu</a>
+            <a href="#" data-city="Pokhara">Pokhara</a>
+            <a href="#" data-city="Bhaktapur">Bhaktapur</a>
+            <a href="#" data-city="Patan">Patan</a>
+            <a href="#" data-city="Nagarkot">Nagarkot</a>
+            <a href="#" data-city="Lumbini">Lumbini</a>
+            <a href="#" data-city="Chitwan">Chitwan</a>
+            <a href="#" data-city="Bandipur">Bandipur</a>
         </div>
-        <h2>Kathmandu's Deals</h2>
+        <div class="listing">
+        <div id="kathmandu" >
+        <h2 style="margin-top: 100px;">Kathmandu's Deals</h2>
         
-            <div class="list">
-                <div>   
-                    <img src="images/f-1.jpg" alt="">
-                </div>
-                <div class="text1">
-                    <h2>Lemon Tree premier</h2>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <a href="https://www.google.com/maps/place/Lemon+Tree+Premier+-+Budhanilkantha,+Kathmandu/@27.7794809,85.3687833,16.86z/data=!4m9!3m8!1s0x39eb1d0040e22a95:0xc0255207f39b2ee2!5m2!4m1!1i2!8m2!3d27.7794791!4d85.3712802!16s%2Fg%2F11y2p799p8?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D">Budhanilkantha, Kathmandu, Nepal</a>
-                     <div class="price">
-                    <span>Starting from:</span>
-                    <strong>NPR 9,999</strong>
-                     </div>
-                     <div style="display: flex; flex-direction: column; ">
-                        <button style="align-self: flex-end; margin-right: 50px;">Book Now</button>
-                    </div>
-                </div>    
-            </div>
+         </div>
+        <div id="pokhara">
+
+            <h2 style="margin-top: 100px;">Pokhara's Deals</h2>
+        </div>
+       <div id="bhaktapur">
+
+           <h2 style="margin-top: 100px;">Bhaktapur's Deals</h2>
+       
+        </div>
+        <div id="patan" >
+        <h2 style="margin-top: 100px;">Patan's Deals</h2>
             
-        <a href="">
-            <div class="list">
-                <div>   
-                    <img src="images/f-2.jpg" alt="">
-                </div>
-                <div class="text1">
-                    <h2>The Dwarika</h2>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <a href="https://www.google.com/maps/place/The+Dwarika's/@27.7053205,85.3395832,16.52z/data=!4m9!3m8!1s0x39eb199d62b49797:0x2138d3ae677c130f!5m2!4m1!1i2!8m2!3d27.7051629!4d85.3423245!16s%2Fm%2F03g__b_?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D">Battisputali Rd, Kathmandu, Nepal</a>
-                     <div class="price">
-                    <span>Starting from:</span>
-                    <strong>NPR 50,000</strong>
-                </div>
-                <div style="display: flex; flex-direction: column; ">
-                        <button style="align-self: flex-end; margin-right: 50px;">Book Now</button>
-                    </div>
-                </div>    
-            </div>
-            </a>
-        <a href="">
-            <div class="list">
-                <div>   
-                    <img src="images/f-3.jpg" alt="">
-                </div>
-                <div class="text1">
-                    <h2>Aarya Hotel and Spa</h2>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <a href="https://www.google.com/maps/place/Aarya+Hotel+and+Spa+-+Eternal+Heritage/@27.7133499,85.3082458,17z/data=!3m1!4b1!4m9!3m8!1s0x39eb19001767c0c1:0xd176d813a1ed2a!5m2!4m1!1i2!8m2!3d27.7133499!4d85.3108207!16s%2Fg%2F11vrx8lzrb?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D">Thamel Marg 32, Kathmandu, Nepal</a>
-                     <div class="price">
-                    <span>Starting from:</span>
-                    <strong>NPR 12,999</strong>
-                     </div>
-                <div style="display: flex; flex-direction: column; ">
-                        <button style="align-self: flex-end; margin-right: 50px;">Book Now</button>
-                    </div>
-                </div>    
-            </div>
-            </a>
-        <a href="">
-            <div class="list">
-                <div>   
-                    <img src="images/f-4.jpg" alt="">
-                </div>
-                <div class="text1">
-                    <h2>Hotel Thrive, A Tropical Courtyard</h2>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <a href="https://www.google.com/maps/place/Hotel+Thrive/@27.7124463,85.3049388,17z/data=!3m1!4b1!4m9!3m8!1s0x39eb194071456b7f:0xbf14ed3c38bb0ffc!5m2!4m1!1i2!8m2!3d27.7124463!4d85.3075137!16s%2Fg%2F11kj4kmzkq?entry=ttu&g_ep=EgoyMDI2MDcwNS4wIKXMDSoASAFQAw%3D%3D">Dhobichaur, Thamel, Kathmandu, Nepal</a>
-                     <div class="price">
-                    <span>Starting from:</span>
-                    <strong>NPR 12,999</strong>
-                     </div>
-                <div style="display: flex; flex-direction: column; ">
-                        <button style="align-self: flex-end; margin-right: 10px;">Book Now</button>
-                    </div>
-                </div>    
-            </div>
-            </a>
-            <br>
-            <br>
-         <h2 id="pokhara">Pokhara's Deals</h2>
-         <br>
-          <a href="">
-            <div class="list">
-                <div>   
-                    <img src="images/p-1.jpg" alt="">
-                </div>
-                <div class="text1">
-                    <h2>Sarangkot Mountain Lodge</h2>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <a href="https://www.google.com/maps/place/Sarangkot+Mountain+Lodge/@28.2478473,83.940999,15.22z/data=!4m10!3m9!1s0x399595781070343f:0x35547ce06a661b23!5m3!1s2026-09-13!4m1!1i2!8m2!3d28.2514468!4d83.9421309!16s%2Fg%2F11gxmczlj4?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D">Sarangkot Rd, Pokhara, Nepal</a>
-                     <div class="price">
-                    <span>Starting from:</span>
-                    <strong>NPR 20,500</strong>
-                     </div>
-                <div style="display: flex; flex-direction: column; ">
-                        <button style="align-self: flex-end; margin-right: 10px;">Book Now</button>
-                    </div>
-                </div>    
-            </div>
-            </a>
-          <a href="">
-            <div class="list">
-                <div>   
-                    <img src="images/p-2.jpg" alt="">
-                </div>
-                <div class="text1">
-                    <h2>Bar Peepal Resort</h2>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <a href="https://www.google.com/maps/place/Bar+Peepal+Resort+Pokhara/@28.2121691,83.961085,16.15z/data=!4m10!3m9!1s0x399595c5f8c70363:0x21b977e2a249b17f!5m3!1s2026-09-13!4m1!1i2!8m2!3d28.2139234!4d83.9640389!16s%2Fg%2F11j8mh3bc6?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D">Mani Marg Street no. 28, Lakeside Rd, Pokhara 33700, Nepal</a>
-                     <div class="price">
-                    <span>Starting from:</span>
-                    <strong>NPR 16,500</strong>
-                     </div>
-                <div style="display: flex; flex-direction: column; ">
-                        <button style="align-self: flex-end; margin-right: 10px;">Book Now</button>
-                    </div>
-                </div>    
-            </div>
-            </a>
-          <a href="">
-            <div class="list">
-                <div>   
-                    <img src="images/p-3.jpg" alt="">
-                </div>
-                <div class="text1">
-                    <h2>Hotel Barahi Pokhara</h2>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <a href="https://www.google.com/maps/place/Hotel+Barahi+Pokhara/@28.2083927,83.9562079,17z/data=!4m10!3m9!1s0x3995951e5e47ff79:0x17b564e86b3d9f00!5m3!1s2026-09-13!4m1!1i2!8m2!3d28.2083927!4d83.9587828!16s%2Fg%2F1tg2bxg5?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D">6 Lakeside Rd, Pokhara 33700, Nepal</a>
-                     <div class="price">
-                    <span>Starting from:</span>
-                    <strong>NPR 20,000</strong>
-                     </div>
-                <div style="display: flex; flex-direction: column; ">
-                        <button style="align-self: flex-end; margin-right: 10px;">Book Now</button>
-                    </div>
-                </div>    
-            </div>
-            </a>
-          <a href="">
-            <div class="list">
-                <div>   
-                    <img src="images/p-4.jpg" alt="">
-                </div>
-                <div class="text1">
-                    <h2>Majestic Lake Front Hotel & Suites</h2>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <a href="https://www.google.com/maps/place/Majestic+Lake+Front+Hotel+%26+Suites/@28.2176902,83.9556288,17z/data=!4m10!3m9!1s0x39959538c94281d1:0x293efbcaed79544a!5m3!1s2026-09-13!4m1!1i2!8m2!3d28.2176902!4d83.9582037!16s%2Fg%2F11krkwk_97?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D">Street 18B, Lakeside Rd, Pokhara 33700, Nepal</a>
-                     <div class="price">
-                    <span>Starting from:</span>
-                    <strong>NPR 9,850</strong>
-                     </div>
-                <div style="display: flex; flex-direction: column; ">
-                        <button style="align-self: flex-end; margin-right: 10px;">Book Now</button>
-                    </div>
-                </div>    
-            </div>
-            </a>
-            <br>
-            <br>
-         <h2 id="bhaktapur">Bhaktapur's Deals</h2>
-         <br>
-          <a href="">
-            <div class="list">
-                <div>   
-                    <img src="images/B-1.jpg" alt="">
-                </div>
-                <div class="text1">
-                    <h2>Hotel Heritage</h2>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <a href="https://www.google.com/maps/place/Hotel+Heritage+Bhaktapur/@27.6674397,85.4223029,17z/data=!4m10!3m9!1s0x39eb1aa678c32923:0xda133938fe0bdead!5m3!1s2026-09-13!4m1!1i2!8m2!3d27.6674397!4d85.4248778!16s%2Fg%2F11rs0pyw2?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3D">Suryabinayak 44800, Bhaktapur, Nepal</a>
-                     <div class="price">
-                    <span>Starting from:</span>
-                    <strong>NPR 10,100</strong>
-                     </div>
-                <div style="display: flex; flex-direction: column; ">
-                        <button style="align-self: flex-end; margin-right: 10px;">Book Now</button>
-                    </div>
-                </div>    
-            </div>
-            </a>
-          <a href="">
-            <div class="list">
-                <div>   
-                    <img src="images/B-2.jpg" alt="">
-                </div>
-                <div class="text1">
-                    <h2>Hotel Bhadgaon</h2>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <a href="https://www.google.com/maps/place/Hotel+Bhadgaon/@27.6673248,85.4250966,17z/data=!4m10!3m9!1s0x39eb1b93eb8fa10b:0xc4d716bc36f0161a!5m3!1s2026-09-13!4m1!1i2!8m2!3d27.6672419!4d85.4250833!16s%2Fg%2F11fll8fwt8?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3D">Barahisthan, Bhaktapur 44800, Nepal</a>
-                     <div class="price">
-                    <span>Starting from:</span>
-                    <strong>NPR 5,650</strong>
-                     </div>
-                <div style="display: flex; flex-direction: column; ">
-                        <button style="align-self: flex-end; margin-right: 10px;">Book Now</button>
-                    </div>
-                </div>    
-            </div>
-            </a>
-          <a href="">
-            <div class="list">
-                <div>   
-                    <img src="images/p-3.jpg" alt="">
-                </div>
-                <div class="text1">
-                    <h2>Shiva Guest House</h2>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <a href="https://www.google.com/maps/place/Shiva+Guest+House/@27.6718108,85.4260281,17z/data=!4m10!3m9!1s0x39eb1befe9ee2f5d:0xcda83c93f58ce25e!5m3!1s2026-09-13!4m1!1i2!8m2!3d27.6718108!4d85.428603!16s%2Fg%2F11sbrbtq8k?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3D">Durbar square, Bhaktapur, Nepal</a>
-                     <div class="price">
-                    <span>Starting from:</span>
-                    <strong>NPR 4,500</strong>
-                     </div>
-                <div style="display: flex; flex-direction: column; ">
-                        <button style="align-self: flex-end; margin-right: 10px;">Book Now</button>
-                    </div>
-                </div>    
-            </div>
-            </a>
-          <a href="">
-            <div class="list">
-                <div>   
-                    <img src="images/b-4.jpg" alt="">
-                </div>
-                <div class="text1">
-                    <h2>Nag Pukhu Guest House</h2>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>    
-                    </div>
-                    <a href="https://www.google.com/maps/place/Nag+Pukhu+Guest+House+-+Standard+Twin+Room/@27.6744227,85.4302108,17z/data=!4m15!1m2!2m1!1sNag+Pukhu+Guest+House!3m11!1s0x39eb1ab207130743:0xadf82efad6a4c06e!5m3!1s2026-09-13!4m1!1i2!8m2!3d27.6741505!4d85.4328308!15sChVOYWcgUHVraHUgR3Vlc3QgSG91c2WSAQ92YWNhdGlvbl9yZW50YWzgAQA!16s%2Fg%2F11z21jtrpb!17BQ0FF?entry=ttu&g_ep=EgoyMDI2MDcxNC4wIKXMDSoASAFQAw%3D%3D">Nag Pukhu, Bhaktapur, Nepal</a>
-                     <div class="price">
-                    <span>Starting from:</span>
-                    <strong>NPR 3,100</strong>
-                     </div>
-                <div style="display: flex; flex-direction: column; ">
-                        <button style="align-self: flex-end; margin-right: 10px;">Book Now</button>
-                    </div>
-                </div>    
-            </div>
-            </a>
+            
+        </div>
+        <div id="nagarkot" >
+            <h2 style="margin-top: 100px;">Nagarkot's Deals</h2>
 
         </div>
+         <div id="lumbini" >
+            <h2 style="margin-top: 100px;">Lumbini's Deals</h2>
+            
+
+        </div>
+        <div id="chitwan">
+            <h2 style="margin-top: 100px;">Chitwan's Deals</h2>
+
     </div>
 
+
+    <div id="bandipur">
+        <h2 style="margin-top: 100px;">bandipur's Deals</h2>
+    </div>
 </div>
 </div>
+         <div id="blue-box">
+
+    <button id="close" type="button">×</button>
+
+    <h2>Book Your Stay</h2>
+
+    <p id="selected-hotel"></p>
+
+    <form id="booking-form">
+
+        <label for="guest-name">Full Name</label>
+        <input type="text" id="guest-name" placeholder="Enter your name" required>
+
+        <label for="guest-email">Email</label>
+        <input type="email" id="guest-email" placeholder="Enter your email" required>
+
+        <label for="guest-phone">Phone</label>
+        <input type="tel" id="guest-phone" placeholder="Enter your phone number" required>
+
+        <label for="check-in">Check-in</label>
+        <input type="date" id="check-in" required>
+
+        <label for="check-out">Check-out</label>
+        <input type="date" id="check-out" required>
+
+        <label for="guests">Number of Guests</label>
+        <input type="number" id="guests" min="1" value="1" required>
+
+        <button type="submit" class="confirm-booking">
+            Confirm Booking
+        </button>
+
+    </form>
+
+</div>
+        </div>
+        <script src="script.js"></script>
+        
 </body>
 </html>

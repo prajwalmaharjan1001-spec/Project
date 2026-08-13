@@ -14,6 +14,7 @@
             cursor: default;
             scroll-behavior: smooth;
         }
+        
         .navigation{
             position: fixed ;
              width: 100%;
@@ -85,6 +86,14 @@
             scrollbar-width: thin;
             
         }
+        .box{
+            width: 300px;
+            color: black;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+             display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+        }
         .section1 a:hover{
             transform: scale(1.1);
             transition: 0.1s ease;
@@ -119,14 +128,6 @@
             border-radius: 5px 5px 0 0; 
             width: 100%;
             height: 50%;
-        }
-        .section2 a{
-            width: 300px;
-            color: black;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-             display: flex;
-            flex-direction: column;
-            border-radius: 5px;
         }
         .text{
             flex: 1;
@@ -203,39 +204,35 @@
     <div class="places">
         <h1>Places to visit</h1>
         <div class="section1">
-            <a href="/Project/html/kathmandu.html" class="place">
+            <a href="/kathmandu.html" class="place">
                 <img src="images/ktm.webp" alt="">
                 <h2>Kathmandu</h2>
             </a>
-            <a href="/Project/html/patan.html" class="place">
+            <a href="/patan.html" class="place">
                 <img src="images/patan.webp" alt="">
                 <h2>Patan</h2>
             </a>
-            <a href="/Project/html/bhaktapur.html" class="place">
+            <a href="/bhaktapur.html" class="place">
                 <img src="images/bkt.jpg" alt="">
                 <h2>Bhaktapur</h2>
             </a>
-            <a href="/Project/html/nagarkot.html" class="place">
+            <a href="/nagarkot.html" class="place">
                 <img src="images/nagarkot.jpg" alt="">
                 <h2>Nagarkot</h2>
             </a>
-            <a href="/html/chitlang.html" class="place">
-                <img src="images/chitlang.png" alt="">
-                <h2>Chitlang</h2>
-            </a>
-            <a href="/html/pokhara.html" class="place">
+            <a href="/pokhara.html" class="place">
             <img src="images/pokhara.jpg" alt="">
             <h2>Pokhara</h2>
         </a>
-        <a href="/Project/html/chitwan.html" class="place">
+        <a href="/chitwan.html" class="place">
             <img src="images/chitwan.jpg" alt="">
             <h2>Chitwan</h2>
         </a>
-        <a href="/Project/html/lumbini.html" class="place">
+        <a href="/lumbini.html" class="place">
             <img src="images/lumbini.jpg" alt="">
             <h2>Lumbini</h2>
         </a>
-        <a href="/Project/html/bandipur.html" class="place">
+        <a href="/bandipur.html" class="place">
             <img src="images/bandipur.jpg" alt="">
             <h2>Bandipur</h2>
         </a>
@@ -244,7 +241,7 @@
 <div class="fav-places">
     <h1>Some famous deals in Kathmandu</h1>
     <div class="section2">
-        <a href="">
+        <div class="box">
             <img src="./images/f-1.jpg" alt="">
             <div class="text">
                 <h2>Lemon Tree Premier</h2>
@@ -261,8 +258,10 @@
                     <strong>NPR 19,999</strong>
                 </div>
             </div>
-        </a>
-        <a href="">
+        </div>
+        <div class="box">
+
+        
             <img src="./images/f-2.jpg" alt="">
             <div class="text">
                 
@@ -280,8 +279,9 @@
                     <strong>NPR 50,000</strong>
                 </div>
             </div>
-        </a>
-        <a href="">
+        </div>
+        <div class="box">
+
             <img src="./images/f-3.jpg" alt="">
             <div class="text">
                 
@@ -299,8 +299,10 @@
                     <strong>NPR 12,500</strong>
                 </div>
             </div>
-        </a>
-        <a href="">
+        </div>
+        
+        <div class="box">
+
             <img src="./images/f-4.jpg" alt="">
             <div class="text">
                 <h2>Hotel Thrive, A Tropical Courtyard</h2>
@@ -318,13 +320,15 @@
                     <strong>NPR 12,999</strong>
                 </div>
             </div>
-        </a>
+        </div>
+    
     </div>
 </div>
 <div class="fav-places">
     <h1>Some famous deals in Pokhara</h1>
     <div class="section2">
-        <a href="">
+        <div class="box">
+
             <img src="./images/p-1.jpg" alt="">
             <div class="text">
                 <h2>Sarangkot Mountain Lodge</h2>
@@ -341,8 +345,9 @@
                     <strong>$349</strong>
                 </div>
             </div>
-        </a>
-        <a href="">
+        </div>
+        <div class="box">
+
             <img src="./images/p-2.jpg" alt="">
             <div class="text">
                 
@@ -360,48 +365,49 @@
                     <strong>$199</strong>
                 </div>
             </div>
-        </a>
-        <a href="">
-            <img src="./images/p-3.jpg" alt="">
-            <div class="text">
-                
-                    <h2>Hotel Barahi Pokhara</h2>
-                    <p>Barahi Marg, Likeside, Pokhara, Nepal</p>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        
-                    </div>
-                    <div class="price">
-                        <span>Starting from:</span>
-                        <strong>$194</strong>
-                    </div>
+        </div>
+      <div class="box">
+
+          <img src="./images/p-3.jpg" alt="">
+          <div class="text">
+              
+              <h2>Hotel Barahi Pokhara</h2>
+              <p>Barahi Marg, Likeside, Pokhara, Nepal</p>
+              <div class="rating">
+                  <span class="filled">★</span>
+                  <span class="filled">★</span>
+                  <span class="filled">★</span>
+                  <span class="filled">★</span>
+                  <span class="filled">★</span>
+                  
                 </div>
-            </a>
-            <a href="">
-                <img src="./images/p-4.jpg" alt="">
-                <div class="text">
-                    <h2>Majestic Lake Front Hotel & Suites</h2>
+                <div class="price">
+                    <span>Starting from:</span>
+                    <strong>$194</strong>
+                </div>
+            </div>
+    </div>
+           <div class="box">
+
+               <img src="./images/p-4.jpg" alt="">
+               <div class="text">
+                   <h2>Majestic Lake Front Hotel & Suites</h2>
                     
-                    <p>Baidam Road, Pokhara, Nepal</p>
-                    <div class="rating">
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span class="filled">★</span>
-                        <span>★</span>    
+                   <p>Baidam Road, Pokhara, Nepal</p>
+                   <div class="rating">
+                       <span class="filled">★</span>
+                       <span class="filled">★</span>
+                       <span class="filled">★</span>
+                       <span class="filled">★</span>
+                       <span>★</span>    
                     </div>
                     <div class="price">
                         <span>Starting from:</span>
                         <strong>$144</strong>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
     </div>
-</div>
 </body>
 </html>
